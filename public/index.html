@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body class="font-poppins">
    <!-- Header start -->
-    <header class="bg-teal-100 fixed top-0 left-0 w-full flex items-center z-10 shadow-lg">
+    <header class="backdrop-blur-md backdrop-grayscale bg-white/30 fixed top-0 left-0 w-full flex items-center z-10 shadow-lg">
         <div class="container">
         <div class="flex items-center justify-between relative">
             <div class="px-4">
@@ -27,11 +29,16 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-xl max-w-[250px] w-full right-4 top-20 lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full md:block md:static md:bg-transparent md:shadow-none md:max-w-full">
                     <ul class="block lg:flex md:flex">
                         <li class="group">
-                            <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary font-medium">Home</a>
+                            <a href="#home" class="text-base text-slate-700 py-2 mx-8 flex group-hover:text-primary font-medium md:text-2xl md:font-semibold">Home</a>
                         </li>
                     <ul class="block">
                         <li class="group">
-                            <a href="#product" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary font-medium">Product</a>
+                            <a href="#product" class="text-base text-slate-700 py-2 mx-8 flex group-hover:text-primary font-medium md:text-2xl md:font-semibold">Product</a>
+                        </li>
+                    </ul>
+                    <ul class="block">
+                        <li class="group">
+                            <a href="#contact" class="text-base text-slate-700 py-2 mx-8 flex group-hover:text-primary font-medium md:text-2xl md:font-semibold">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,15 +49,15 @@
    <!-- Header end -->
 
    <!-- Profil Section start -->
-   <section id="profil" class="pt-40">
+   <section id="home" class="py-44 md:pt-28 md:pb-11 bg-cover bg-center bg-blend-color" style="background-image: url(/src/img/backdrop.jpg)">
     <div class="container">
         <div class="flex flex-wrap">
             <div class="w-full self-center px-3 md:w-1/2">
-                <h1 class="text-2xl font-semibold text-primary mb-3 lg:text-3xl">Welcome to Apotek Sinari</h1>
+                <h1 class="text-2xl font-semibold text-primary mb-5 lg:text-4xl">Welcome to Apotek Sinari</h1>
                 <p class="font-normal mb-5">Layanan farmasi yang menjual berbagai macam <span class="text-red-500 font-semibold underline">obat-obatan</span> serta alat kesehatan dengan harga <span class="text-red-500 font-semibold underline">terjangkau.</span></p>
                 <a href="#" class="text-base font-semibold text-white bg-primary px-4 py-2 rounded-full hover:ring-2 hover:opacity-100 transition duration-300 ease-in-out">Hubungi kami</a>
             </div> 
-            <div class="w-full self-end px-3 md:w-1/2">
+            <div class="w-full self-end px-3 hidden md:block md:w-1/2">
                 <div class="mt-10">
                     <img src="/src/img/1.png" alt="farmasi" class="max-w-full mx-auto mb-16 pb-5"/>
                 </div>
@@ -61,29 +68,29 @@
    <!-- Profil Section end -->
 
    <!-- Product Section start -->
-   <section id="product" class="pt-24 pb-28  bg-pink-200">
+   <section id="product" class="pt-24 pb-32  bg-slate-200">
         <div class="container">
-            <div class="w-full px-3 ">
+            <div class="w-full px-3">
                 <div class="mx-auto text-center">
-                    <h2 class="text-xl font-extrabold mb-10">Produk Terlaris bulan ini...</h2>
+                    <h1 class="text-2xl font-extrabold mb-10 md:text-3xl">Produk Terlaris bulan ini...</h1>
                     <div class="flex flex-wrap">
-                        <div class="px-3 mb-10 md:w-1/4">
-                            <div class="rounded-xl shadow-xl overflow-hidden">
+                        <div class="px-5 mb-10 md:w-1/4">
+                            <div class="rounded-xl shadow-xl overflow-hidden hover:cursor-pointer hover:scale-105 transition-transform duration-300 hover:ring-2">
                                 <img src="/src/img/amox.jpg" alt="amoxicillin"/>
                             </div>
                         </div>
-                        <div class="px-3 mb-10 md:w-1/4">
-                            <div class="rounded-xl shadow-xl overflow-hidden">
+                        <div class="px-5 mb-10 md:w-1/4">
+                            <div class="rounded-xl shadow-xl overflow-hidden hover:cursor-pointer hover:scale-105 transition-transform duration-300 hover:ring-2">
                                 <img src="/src/img/bodrexin.jpg" alt="bodrexin"/>
                             </div>
                         </div>
-                        <div class="px-3 mb-10 md:w-1/4">
-                            <div class="rounded-xl shadow-xl overflow-hidden">
+                        <div class="px-5 mb-10 md:w-1/4">
+                            <div class="rounded-xl shadow-xl overflow-hidden hover:cursor-pointer hover:scale-105 transition-transform duration-300 hover:ring-2">
                                 <img src="/src/img/promag.jpg" alt="promag"/>
                             </div>
                         </div>
-                        <div class="px-3 mb-10 md:w-1/4">
-                            <div class="rounded-xl shadow-xl overflow-hidden">
+                        <div class="px-5 mb-10 md:w-1/4">
+                            <div class="rounded-xl shadow-xl overflow-hidden hover:cursor-pointer hover:scale-105 transition-transform duration-300 hover:ring-2">
                                 <img src="/src/img/sanmol.jpeg" alt="sanmol"/>
                             </div>
                         </div>
@@ -92,7 +99,42 @@
             </div>
         </div>
    </section>
+   <hr/>
    <!-- Product Section end -->
+   <!-- contact us section start -->
+    <section id="contact" class="py-11 md:py-24 bg-teal-100">
+        <div class="container w-full mx-auto">
+            <div class="text-center">
+                <h1 class="text-2xl font-extrabold mb-10 md:hidden">Contact us</h1>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-3/4 h-96 bg-white rounded-xl overflow-hidden">
+                    <div class="md:grid grid-cols-2 h-full">
+                        <div class="bg-slate-300 mx-auto p-5 hidden md:block">
+                            <h1 class="text-2xl p-5 text-center font-extrabold">Contact Us</h1>
+                            <p class="p-5">Anda dapat secara langsung menghubungi kami 24 jam melalui email</p>
+                        </div>
+                        <div class="flex flex-wrap mt-7 ml-2 mr-2">
+                            <form id="form">
+                            <label class="w-full p-1 font-semibold">Nama Lengkap</label>
+                            <div>
+                            <input type="text" id="input-nama" placeholder="Masukkan nama lengkap" class="w-full p-2 border-2 border-solid divide-black text-sm" required/>
+                            <span id="nama-err" class="text-sm text-red-500 hidden">Minimal 3-15 karakter</span></div>
+                            <label class="w-full p-1 font-semibold">Email</label>
+                            <div>
+                            <input type="email" id="input-email" class="w-full p-2 border-2 border-solid divide-black text-sm" placeholder="Masukkan email anda" required/>
+                            <span id="email-err" class="text-sm text-red-500 hidden">Email tidak valid</span></div>
+                            <label class="w-full p-1 font-semibold">Pesan</label>
+                            <input type="text" id="input-pesan" class="w-full p-2 border-2 border-solid pb-16 divide-black text-sm" placeholder="Masukkan pesan anda..."/>
+                            <button type="submit" class="mt-5 border-2 border-solid w-full py-2 bg-primary rounded-full hover:ring-2 hover:ring-blue-500 transition duration-300">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- contact us section end -->
    <script src="/public/js/script.js"></script>
 </body>
 </html>

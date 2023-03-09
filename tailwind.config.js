@@ -13,7 +13,11 @@ module.exports = {
       colors: {
         primary: '#0ea5e9',
       },
-      '2xl': '1320px'
+      screen:{
+        '2xl': '1320px',
+        'xs' : '425px',
+      },
+    
     },
   },
   plugins: [],
